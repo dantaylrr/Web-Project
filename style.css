@@ -18,16 +18,6 @@ html {
     display: flex;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover{
-    color: white;
-    text-decoration: none;
-}
-
 .nav-bar, .nav-links {
     position: fixed;
     font-size: calc(1vw + 1vh);
@@ -43,6 +33,7 @@ a:hover{
 }
 
 .nav-bar.scrolling, .nav-links.scrolling {
+    z-index: 100;
     background-color: white;
     position: fixed;
     font-size: calc(1vw + 1vh);
@@ -62,10 +53,13 @@ a:hover{
     text-decoration: none;   
 }
 .nav-text:hover {
+    color: white;
     text-decoration: underline;
 }
 .nav-text.scrolling {
+    z-index: 100;
     color: black;
+    background-color: white;
 }
 
 .nowtinteresting {
@@ -101,6 +95,7 @@ a:hover{
 }
 
 .container {
+    height: 100vh;
     background-color: teal;
 }
 
