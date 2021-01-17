@@ -85,10 +85,10 @@ html {
 }
 
 .whitespace {
-    background-color: green;
+    background-color: white;
     color: white;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
 }
 .whitespace:hover{
     cursor: default;
