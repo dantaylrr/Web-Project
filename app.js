@@ -1,6 +1,10 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-
+    if (scroll >= 600) {
+        $(".image").addClass("scrolling");
+    } else {
+        $(".image").removeClass("scrolling");
+    }
     if (scroll >= 600) {
         $(".nav-text").addClass("scrolling");
     } else {
