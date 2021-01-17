@@ -11,17 +11,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>nowt interesting</title>
 </head>
 
 <body>
-   <div class="image">
+   <div id="home" class="image">
        <nav>
             <ul class="nav-bar">
-                <li class="nav-link"><a class="nav-text" href="#home">home</a></li>
-                <li class="nav-link"><a class="nav-text" href="#about">about</a></li>
-                <li class="nav-link"><a class="nav-text" href="#blog">blog</a></li>
-                <li class="nav-link"><a class="nav-text" href="#gallery">gallery</a></li>
+                <li class="nav-link"><a href="#home">home</a></li>
+                <li class="nav-link"><a href="#about">about</a></li>
+                <li class="nav-link"><a href="#blog">blog</a></li>
+                <li class="nav-link"><a href="#gallery">gallery</a></li>
             </ul>
        </nav>
        <p class="nowtinteresting">
@@ -32,9 +33,9 @@
 
    <main>
 
-       <div class="whitespace">here is some whitespace</div>
+       <!---div class="whitespace">here is some whitespace</div--->
 
-       <div class="container">
+       <div id="about" class="container">
            <h1 class="aboutme">
                about me . . .
            </h1>
