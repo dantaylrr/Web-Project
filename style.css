@@ -7,24 +7,26 @@
 
 .image {
     z-index: 0;
-    background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
     width: 100vw;
     display: flex;
-    animation: animate 16s ease-in-out infinite;
+    animation: animate 10s ease-in-out infinite;
 }
 
-/* @keyframes animate {
-    0%{
+@keyframes animate {
+    0%,100%{
         background-image: url(../images/background.jpg);
     }
-    25%{
-        background-image: url(../images/background.jpg);
+    33%{
+        background-image: url(../images/129290658_2870974616500034_7732703758045352225_n.jpg);
     }
-}*/
+    66%{
+        background-image: url(../images/tumblr_cf19030186ccac756cf2f8373f276ca6_8862994f_2048.jpg);
+    }
+}
 
 .nav-bar, .nav-links {
     z-index: 100;
