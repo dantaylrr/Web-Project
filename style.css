@@ -14,7 +14,17 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    animation: animate 16s ease-in-out infinite;
 }
+
+/* @keyframes animate {
+    0%{
+        background-image: url(../images/background.jpg);
+    }
+    25%{
+        background-image: url(../images/background.jpg);
+    }
+}*/
 
 .nav-bar, .nav-links {
     z-index: 100;
