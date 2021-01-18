@@ -5,7 +5,7 @@ $(window).scroll(function() {
     } else {
         $(".image").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()*0.95) {
+    if (blockscroll >= $(window).height()*0.90) {
         $(".nav-bar a").addClass("scrolling");
     } else {
         $(".nav-bar a").removeClass("scrolling");
@@ -38,7 +38,7 @@ $(document).ready(function(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 800, function(){
+        }, 1000, function(){
   
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;

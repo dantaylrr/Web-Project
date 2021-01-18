@@ -48,6 +48,7 @@
 }
 
 .nav-bar a {
+    transition: color 750ms linear;
     z-index: 100;
     color: white;
     text-decoration: none;   
@@ -58,8 +59,9 @@
     text-decoration: underline;
 }
 .nav-bar a.scrolling {
+    transition: color 750ms ease-out;
     z-index: 100;
-    color:black;
+    color:black!important;
 }
 
 .nowtinteresting {
