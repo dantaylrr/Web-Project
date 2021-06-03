@@ -2,10 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
-.image {
+.backgroundimage {
     z-index: 0;
     background-size: cover;
     background-attachment: fixed;
@@ -13,10 +13,10 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    animation: animate 20s ease-in infinite;
+    background-image: url(../images/background.jpg);
 }
 
-@keyframes animate {
+/*@keyframes animate {
     0%,100%{
         background-image: url(../images/background.jpg);
     }
@@ -27,12 +27,12 @@
         background-image: url(../images/tumblr_cf19030186ccac756cf2f8373f276ca6_8862994f_2048.jpg);
     }
 }
-
+*/
 .nav-bar, .nav-links {
     z-index: 100;
     position: fixed;
-    font-size: calc(1vw + 1vh);
-    font-weight: 300;
+    font-size: calc(0.75vw + 0.75vh);
+    font-weight: 200;
     width: 100%;
     height: 10%;
     margin: auto;
@@ -47,8 +47,8 @@
     z-index: 100;
     background-color: white;
     position: fixed;
-    font-size: calc(1vw + 1vh);
-    font-weight: 300;
+    font-size: calc(0.75vw + 0.75vh);
+    font-weight: 200;
     width: 100%;
     height: 10%;
     margin: auto;
@@ -73,13 +73,40 @@
 .nav-bar a.scrolling {
     transition: color 750ms ease-out;
     z-index: 100;
-    color:black!important;
+    color: #6e6e6e!important;
+}
+
+.nav-bar-pending, .nav-links-pending {
+    z-index: 100;
+    position: fixed;
+    font-size: calc(0.75vw + 0.75vh);
+    font-weight: 200;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar-pending a {
+    transition: color 750ms linear;
+    z-index: 100;
+    color: #6e6e6e;
+    text-decoration: none;   
+}
+.nav-bar-pending a:hover {
+    z-index: 100;
+    color: #6e6e6e;
+    text-decoration: underline;
 }
 
 .nowtinteresting {
     z-index: 1;
     font-size: calc(2vw + 2vh);
-    font-weight: 300;
+    font-weight: 200;
     color: white;
     line-height: 100%;
     position: absolute;
@@ -91,10 +118,11 @@
     width: 100%;
     right: 0;
     left: 0;
-    bottom: 50px;
+    bottom: 150px;
     top: 0;
     margin: auto;
 }
+
 .nowtinteresting:hover {
     cursor: default;
 }
@@ -104,6 +132,27 @@
     bottom: 8px;
     right: 16px;
     font-size: calc(1vw + 1vw);
+}
+
+.definition {
+    font-size: calc(1vw + 1vh);
+    font-weight: 100;
+    color: white;
+    line-height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 10vh;
+    height: 50vh;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    top: 0;
+    margin: auto;
+    font-style: italic;
 }
 
 
@@ -122,11 +171,28 @@
     }
   }
 
-.letters{
-    animation: FadeIn 0.5s linear;
+/*.letters{
+    animation: FadeIn 1s linear;
     animation-fill-mode: both;
+}*/
+
+.pending {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: calc(0.75vw + 0.75vh);
+    font-weight: 200;
+    color: #6e6e6e;
 }
 
+.pending:hover {
+    cursor: default;
+}
+
+/*
 .letters:nth-child(1) {animation-delay: .5s}
 .letters:nth-child(2) {animation-delay: 1s}
 .letters:nth-child(3) {animation-delay: 1.5s}
@@ -142,35 +208,68 @@
 .letters:nth-child(13) {animation-delay: 6.5s}
 .letters:nth-child(14) {animation-delay: 7s}
 .letters:nth-child(15) {animation-delay: 7.5s}
+*/
 
-.container {
+.gapfill {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    height: 80vh;
+    height: 10vh;
 }
 
-.aboutme, .aboutmepara {
-    background-color:white;
-    font-weight: 200;
-    font-style: italic;
+.gapfillphoto {
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+}
+
+.aboutprojectcontainer {
+    align-items: top;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width: 100%;
+    margin: auto;
+    height: 50%;
 }
-.aboutme {
-    font-size: calc(2vw + 2vh);
+
+.projectpara {
+    font-weight: 200;
+    font-size: calc(0.75vw + 0.75vh);
+    width: 100%;
+    color: #6e6e6e;
 }
-.aboutmepara {
-    font-size: calc(1vw + 1vh);
+
+/*.linetext {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
 }
+
+.playground {
+    font-weight: 200;
+    font-size: calc(0.75vw + 0.75vh);
+    width: 100%;
+    font-style: italic;
+}
+
+
+.aboutimage {
+    float: right;
+    height: 60vh;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 10px;
+}*/
 
 .socials{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
     max-width: 100%;
 }
@@ -189,15 +288,15 @@
 }
 .socials ul li .fa {
     color: white;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 40px;
     transition: .5s;
 }
 .socials ul li a {
     position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
     transition: 0.5s;
@@ -218,6 +317,45 @@
 }
 .socials ul li:nth-child(4) a {
     background-color:#00405d;
+}
+
+.gallerytextcontainer {align-items: center;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.gallerytextheader {
+    font-weight: 200;
+    font-size: calc(1vw + 1vh);
+}
+
+.media1, .media2, .media3, .media4, .media5, .media6 {align-items: center;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.photo1, .photo2, .photo3, .photo41, .photo42, .photo43, .photo5, .photo6 {
+    max-height: fit-content;
+    max-width: fit-content;
+    object-fit: contain;
+    height: 40%;
+    width: 70%;
+    border-radius: 1%;
+}
+
+.description1, .description2, .description3, .description4, .description5, .description6 {
+    font-weight: 200;
+    font-size: calc(0.75vw + 0.75vh);
+    font-style: italic;
+    color: #6e6e6e;
 }
 
 /*.socials {
