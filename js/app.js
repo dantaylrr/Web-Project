@@ -1,21 +1,21 @@
 $(window).scroll(function() {    
     var blockscroll = $(window).scrollTop();
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.05) {
         $(".image").addClass("scrolling");
     } else {
         $(".image").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()*0.95) {
+    if (blockscroll >= $(window).height()*0.05) {
         $(".nav-bar a").addClass("scrolling");
     } else {
         $(".nav-bar a").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.05) {
         $(".nav-bar").addClass("scrolling");
     } else {
         $(".nav-bar").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.05) {
         $(".nav-links").addClass("scrolling");
     } else {
         $(".nav-links").removeClass("scrolling");

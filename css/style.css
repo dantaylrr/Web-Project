@@ -33,13 +33,14 @@
     font-size: calc(0.75vw + 0.75vh);
     font-weight: 200;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     margin: auto;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    transition: background-color 500ms linear;
 }
 
 .nav-bar.scrolling, .nav-links.scrolling {
@@ -49,17 +50,18 @@
     font-size: calc(0.75vw + 0.75vh);
     font-weight: 200;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     margin: auto;
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    transition: background-color 750ms linear;
 }
 
 .nav-bar a {
-    transition: color 750ms linear;
+    transition: color 500ms linear;
     z-index: 100;
     color: white;
     text-decoration: none;   
@@ -81,7 +83,7 @@
     font-size: calc(0.75vw + 0.75vh);
     font-weight: 200;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     margin: auto;
     display: flex;
     list-style: none;
