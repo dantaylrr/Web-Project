@@ -14,7 +14,6 @@
     width: 100vw;
     display: flex;
     background-image: url(../images/background.jpg);
-    width: fit-content;
 }
 
 /*@keyframes animate {
