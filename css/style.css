@@ -33,7 +33,7 @@
     position: fixed;
     font-size: calc(0.75vw + 0.75vh);
     font-weight: 200;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     margin: auto;
     display: flex;
@@ -49,7 +49,7 @@
     position: fixed;
     font-size: calc(0.75vw + 0.75vh);
     font-weight: 200;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     margin: auto;
     display: flex;
@@ -342,13 +342,17 @@
     margin: auto;
 }
 
-.photo1, .photo2, .photo3, .photo41, .photo42, .photo43, .photo5, .photo6 {
+img {
     max-height: fit-content;
     max-width: fit-content;
     object-fit: contain;
     height: 40%;
     width: 70%;
     border-radius: 1%;
+}
+
+img:hover {
+    
 }
 
 .description1, .description2, .description3, .description4, .description5, .description6 {
