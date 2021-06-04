@@ -1,6 +1,6 @@
 $(window).scroll(function() {    
     var blockscroll = $(window).scrollTop();
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.99) {
         $(".image").addClass("scrolling");
     } else {
         $(".image").removeClass("scrolling");
@@ -10,12 +10,12 @@ $(window).scroll(function() {
     } else {
         $(".nav-bar a").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.99) {
         $(".nav-bar").addClass("scrolling");
     } else {
         $(".nav-bar").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()) {
+    if (blockscroll >= $(window).height()*0.99) {
         $(".nav-links").addClass("scrolling");
     } else {
         $(".nav-links").removeClass("scrolling");
