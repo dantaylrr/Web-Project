@@ -7,15 +7,12 @@
 
 .backgroundimage {
     z-index: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
     width: 100vw;
-    display: flex;
     background-image: url(../images/background.jpg);
 }
 
@@ -212,6 +209,12 @@
 .letters:nth-child(14) {animation-delay: 7s}
 .letters:nth-child(15) {animation-delay: 7.5s}
 */
+
+.gapfilldiff {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+}
 
 .gapfill {
     display: flex;
