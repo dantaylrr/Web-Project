@@ -5,7 +5,7 @@ $(window).scroll(function() {
     } else {
         $(".image").removeClass("scrolling");
     }
-    if (blockscroll >= $(window).height()*0.95) {
+    if (blockscroll >= $(window).height()) {
         $(".nav-bar a").addClass("scrolling");
     } else {
         $(".nav-bar a").removeClass("scrolling");
