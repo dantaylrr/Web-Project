@@ -7,7 +7,7 @@
 
 .backgroundimage {
     z-index: 0;
-    background-size: 100%;
+    background-size: fixed;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
